@@ -1,0 +1,80 @@
+/* Estilo global */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #9500ff94, #00ffee);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estrutura das telas */
+.tela {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 90%;
+  padding: 20px;
+  text-align: center;
+  display: none;
+}
+
+/* Exibição inicial */
+#tela-inicio {
+  display: block;
+}
+
+/* Títulos e textos */
+h1, h2 {
+  color: #333;
+}
+
+p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Inputs e botões */
+input {
+  width: 80%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+button {
+  width: 50%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #39bc05;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #2a8a03;
+}
+
+/* Ranking */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #f4f4f4;
+}
