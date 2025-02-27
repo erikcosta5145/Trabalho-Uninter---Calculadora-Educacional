@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo das Contas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="tela-inicio" class="tela">
+        <h1>Jogo das Contas</h1>
+        <p>Digite seu nome para começar:</p>
+        <input type="text" id="nome-jogador" placeholder="Nome">
+        <button id="iniciar-jogo">Iniciar Jogo</button>
+    </div>
+
+    <div id="tela-jogo" class="tela" style="display: none;">
+        <h1>Desafio Matemático</h1>
+        <p id="pergunta"></p>
+        <input type="number" id="resposta" placeholder="Digite sua resposta">
+        <button id="enviar">Responder</button>
+        <p id="resultado"></p>
+        <p id="pontuacao">Pontuação: 0</p>
+        <button id="sair">Sair</button>
+    </div>
+
+    <div id="tela-ranking" class="tela" style="display: none;">
+        <h2>Ranking de Pontuações</h2>
+        <table id="tabela-ranking">
+            <thead>
+                <tr>
+                    <th>Posição</th>
+                    <th>Nome</th>
+                    <th>Pontuação</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Linhas do ranking serão adicionadas dinamicamente -->
+            </tbody>
+        </table>
+        <button id="voltar-inicio">Voltar ao Início</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
